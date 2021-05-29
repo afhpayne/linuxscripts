@@ -6,14 +6,15 @@ then
     printf "nvidia not found...\n"
 else
     printf "nvidia found... $gpu_check \n"
-    sh ~/Nextcloud/Installers/NVIDIA*.run
+    sh /home/$SUDO_USER/Github/linuxscripts/slackware/nvidia_expect.sh
 fi
 
-sh ~/Nextcloud/Installers/VirtualBox*.run \
+sh /home/$SUDO_USER/Nextcloud/Installers/VirtualBox*.run \
 &&
 flatpak update -y \
 &&
 flatpak remove --unused \
 &&
+reboot
 
-exit 0
+exit 1
