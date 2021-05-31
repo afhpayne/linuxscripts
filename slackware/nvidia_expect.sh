@@ -2,7 +2,7 @@
 
 set timeout 60
 
-spawn /home/andrew/Nextcloud/Installers/NVIDIA-Linux-x86_64-460.80.run
+spawn /home/$SUDO_USER/Nextcloud/Installers/NVIDIA-Linux-x86_64-460.80.run
 
 expect "Continue"
 
