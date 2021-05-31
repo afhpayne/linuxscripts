@@ -1,9 +1,23 @@
 #!/usr/bin/expect
 
-spawn ~/Nextcloud/Installers/NVIDIA*.run
+set timeout 60
 
-expect ""
+spawn /home/andrew/Nextcloud/Installers/NVIDIA-Linux-x86_64-460.80.run
 
-send -- 
+expect "Continue"
+
+send "\r"
+
+expect "Install"
+
+send "\t\r"
+
+expect "Would"
+
+send "\t\r"
+
+expect "Your"
+
+send "\r"
 
 expect EOF
