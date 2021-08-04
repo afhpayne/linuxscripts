@@ -14,7 +14,7 @@ sh /home/$SUDO_USER/Nextcloud/Installers/VirtualBox*.run \
 &&
 flatpak update -y \
 &&
-flatpak remove --unused \
+flatpak remove --unused -y \
 &&
 reboot
 
