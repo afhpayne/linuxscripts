@@ -3,7 +3,7 @@
 set timeout 60
 set sudo_user [lindex $argv 0]
 
-spawn /home/$sudo_user/Nextcloud/Installers/NVIDIA-Linux-x86_64-460.80.run
+spawn /home/$sudo_user/Nextcloud/Installers/NVIDIA-Linux-x86_64-470.57.02.run
 
 expect "Continue"
 
