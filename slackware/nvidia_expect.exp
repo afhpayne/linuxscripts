@@ -1,0 +1,28 @@
+#!/usr/bin/expect
+
+set timeout 60
+set sudo_user [lindex $argv 0]
+
+<<<<<<< HEAD
+spawn /home/$sudo_user/Nextcloud/Installers/NVIDIA-Linux-x86_64-470.86.run
+=======
+spawn /home/$sudo_user/Nextcloud/Installers/NVIDIA-Linux-x86_64-470.94.run
+>>>>>>> 085452906271fa56fb62be689658d7c944fe48f9
+
+expect "Continue"
+
+send "\r"
+
+expect "Install"
+
+send "\t\r"
+
+expect "Would"
+
+send "\t\r"
+
+expect "Your"
+
+send "\r"
+
+expect EOF
