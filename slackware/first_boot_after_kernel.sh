@@ -10,8 +10,8 @@ else
     expect /home/$SUDO_USER/Github/linuxscripts/slackware/nvidia_expect.exp $sudo_user
 fi
 
-sh /home/$SUDO_USER/Nextcloud/Installers/VirtualBox*.run \
-&&
+# sh /home/$SUDO_USER/Nextcloud/Installers/VirtualBox*.run \
+# &&
 flatpak update -y \
 &&
 flatpak remove --unused -y \
